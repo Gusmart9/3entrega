@@ -37,46 +37,115 @@ body {
       display: none; }
     body header nav #check {
       display: none; }
-  body main {
-    margin-left: 2rem; }
-    body main section h2 {
-      margin-bottom: 20px;
-      margin-top: 20px;
+  body main div section h2 {
+    margin: 1.5rem;
+    text-align: center;
+    color: #ffc600;
+    background: black;
+    font-size: 2rem;
+    padding: 0.5rem; }
+  body main div section article {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 30px; }
+  body main div section div p {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: center; }
+  body main div section div ul li {
+    text-align: center; }
+  body main div section div div {
+    display: flex;
+    justify-content: center;
+    margin: 16px 0 30px; }
+    body main div section div div img {
+      width: 70%;
+      margin-right: 50px; }
+  body main div iframe {
+    margin: 25px 30px; }
+  body main blockquote section aside {
+    text-align: center; }
+    body main blockquote section aside p {
+      margin: 1.5rem;
       text-align: center;
       color: #ffc600;
       background: black;
-      margin-right: 30px; }
-    body main section article {
-      display: flex;
-      justify-content: center;
-      margin: 16px 0 30px; }
-    body main section div p {
-      margin-bottom: 20px;
-      margin-top: 20px; }
-    body main section div ul li {
-      text-align: center; }
-    body main section h2 {
-      margin-bottom: 20px;
-      margin-top: 20px;
-      text-align: center;
-      color: #ffc600;
-      background: black;
-      margin-right: 30px; }
-    body main section div p {
-      text-align: center; }
-    body main section div div {
-      display: flex;
-      justify-content: center;
-      margin: 16px 0 30px; }
-      body main section div div img {
-        width: 70%;
-        margin-right: 50px; }
-    body main iframe {
-      margin: 25px 30px; }
+      font-size: 1.5rem;
+      padding: 0.5rem; }
+    body main blockquote section aside img {
+      width: 70%; }
+  body main blockquote section article {
+    margin: 2rem; }
+  body main blockquote section div {
+    text-align: center; }
+  body main aside section p {
+    margin: 1.5rem;
+    text-align: center;
+    color: #ffc600;
+    background: black;
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+  body main aside section div {
+    text-align: center; }
+    body main aside section div img {
+      width: 80%;
+      margin: 1rem 0; }
+  body main aside section .pajarito {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "twitter1 twitter2 twitter3";
+    justify-content: center; }
+    body main aside section .pajarito .twitter1, body main aside section .pajarito .twitter2, body main aside section .pajarito .twitter3 {
+      width: 35rem; }
+  body main article section h2 {
+    margin: 1.5rem;
+    text-align: center;
+    color: #ffc600;
+    background: black;
+    font-size: 1.5rem;
+    padding: 0.5rem; }
+  body main article section div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "for1 res1"  "for2 res2"  "for3 res3"  "for4 res4"  "for5 res5"  "for6 res6"  "for7 res7"; }
+    body main article section div .formaciones {
+      margin: 2rem; }
+    body main article section div img {
+      width: 75%;
+      height: auto; }
+  body main figure h1 {
+    margin: 1.5rem;
+    text-align: center;
+    color: #ffc600;
+    background: black;
+    font-size: 2rem;
+    padding: 0.5rem; }
+  body main figure div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    grid-template-areas: "rem1 rem2"  "rem3 rem4" "rem5 rem6" "rem7 rem8" "rem9 rem10" "rem11 rem12" "rem13 rem14" "rem15 rem16"; }
+    body main figure div .remeras {
+      margin: 1rem; }
+    body main figure div img {
+      width: 70%;
+      height: auto; }
+  body figure {
+    text-align: center; }
+    body figure .fin2 {
+      width: 50%;
+      height: auto; }
+  body div .arriba {
+    margin-left: 2rem;
+    text-decoration: none; }
   body fieldset {
     border: 5px solid black;
     padding: 20px 0px 20px 10%;
-    margin-bottom: 40px; }
+    margin: 2rem; }
   body footer {
     margin: 2rem 0; }
     body footer div {
@@ -85,20 +154,3 @@ body {
     body footer a img {
       height: auto;
       width: 50px; }
-
-body main section aside p {
-  margin-bottom: 20px;
-  margin-top: 20px;
-  text-align: center;
-  color: #ffc600;
-  background: black;
-  margin-right: 30px; }
-
-body main section aside img {
-  margin: 50px 80px 50px;
-  height: auto;
-  width: 80%;
-  text-align: center; }
-
-body main section div {
-  text-align: center; }

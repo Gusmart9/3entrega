@@ -51,71 +51,204 @@ body{
 
     }
     main{
-        margin-left: 2rem;
-        section{
-            h2{
-                margin-bottom: 20px;
-                margin-top: 20px;
-                text-align: center;
-                color: #ffc600;
-                background: black;
-                margin-right: 30px;
-            }
-            article{
-                
-                    display: flex;
-                    justify-content: center;
-                    margin: 16px 0 30px;
-                
-            }
-            div{
-                p{
-                    margin-bottom: 20px;
-                    margin-top: 20px;
+        
+        div{
+            section{
+                h2{
+                    margin: 1.5rem;
+                    text-align: center;
+                    color: #ffc600;
+                    background: black;
+                    font-size: 2rem;
+                    padding: 0.5rem;
                 }
-                ul{
-                    li{
+                article{
+                    
+                        display: flex;
+                        justify-content: center;
+                        margin: 16px 0 30px;
+                    
+                }
+                div{
+                    p{
+                        margin-bottom: 20px;
+                        margin-top: 20px;
                         text-align: center;
                     }
+                    ul{
+                        li{
+                            text-align: center;
+                        }
+                    }
                 }
             }
-        }
-        section{
-            h2{
-                margin-bottom: 20px;
-                margin-top: 20px;
-                text-align: center;
-                color: #ffc600;
-                background: black;
-                margin-right: 30px;
-            }
-            div{
-                p{
-                    text-align: center;
-                }
-                    
-                
+            section{
+               
                 div{
-                    display: flex;
-                    justify-content: center;
-                    margin: 16px 0 30px;
+                  
+                    
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        margin: 16px 0 30px;
+                        img{
+                            width: 70%;
+                            margin-right: 50px;
+                        }
+                    }
+                }
+            }
+            iframe{
+                margin: 25px 30px;
+            }
+    
+
+        }
+        blockquote{
+            section{
+                aside{
+                    text-align: center;
+                    p{
+                        margin: 1.5rem;
+                        text-align: center;
+                        color: #ffc600;
+                        background: black;
+                        font-size: 1.5rem;
+                        padding: 0.5rem;
+                    }
                     img{
                         width: 70%;
-                        margin-right: 50px;
+                    }
+                }
+                article{
+                  margin: 2rem;
+                
+                }
+                div{
+                    text-align: center;
+                }
+            }
+         }
+        aside{
+            section{
+                p{
+                    margin: 1.5rem;
+                    text-align: center;
+                    color: #ffc600;
+                    background: black;
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                        
+                }
+                div{
+                text-align: center;
+                   img{
+                    width: 80%;
+                    margin: 1rem 0;
+
+                   }
+                }
+                .pajarito{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto;
+                    grid-template-areas: "twitter1 twitter2 twitter3";
+                    justify-content: center;
+                    .twitter1,.twitter2,.twitter3{
+                    width: 35rem;
                     }
                 }
             }
         }
-        iframe{
-            margin: 25px 30px;
+        article{
+            
+            section{
+                h2{
+                    margin: 1.5rem;
+                    text-align: center;
+                    color: #ffc600;
+                    background: black;
+                    font-size: 1.5rem;
+                    padding: 0.5rem;
+                }
+                div{
+                    display: grid;
+                    grid-template-columns: auto;
+                    grid-template-rows: auto;
+                    justify-items: center;
+                    grid-template-areas:"for1 res1" 
+                                        "for2 res2" 
+                                        "for3 res3" 
+                                        "for4 res4" 
+                                        "for5 res5" 
+                                        "for6 res6" 
+                                        "for7 res7";
+                    .formaciones{
+                        margin: 2rem;
+                    }                    
+                    img{ 
+                        width: 75%;
+                        height: auto;                       
+                    }
+                }
+            }
         }
+        figure{
+            h1{
+                    margin: 1.5rem;
+                    text-align: center;
+                    color: #ffc600;
+                    background: black;
+                    font-size: 2rem;
+                    padding: 0.5rem;
+                
+            }
+            div{
+                display: grid;
+                grid-template-columns: auto;
+                grid-template-rows: auto;
+                justify-items: center;
+                grid-template-areas:"rem1 rem2" 
+                                    "rem3 rem4"
+                                    "rem5 rem6"
+                                    "rem7 rem8"
+                                    "rem9 rem10"
+                                    "rem11 rem12"
+                                    "rem13 rem14"
+                                    "rem15 rem16";
+                .remeras{
+                    margin: 1rem;
+                }                    
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+            }
 
+        }
+        
+       
+    }
+    figure{
+        text-align: center;
+        .fin2{
+        width: 50%;
+        height: auto;
+        }
+    }
+    div{
+        .arriba{
+            margin-left: 2rem;
+            text-decoration: none;
+            
+        }
     }
     fieldset{
         border: 5px solid black;
         padding: 20px 0px 20px 10%;
-        margin-bottom: 40px;
+        margin: 2rem ;
     }
+
     footer{
         margin: 2rem 0;
         div{
@@ -131,32 +264,3 @@ body{
     }
 }
 
-body{
-    main{
-
-    
-   section{
-    aside{
-        p{
-            margin-bottom: 20px;
-            margin-top: 20px;
-            text-align: center;
-            color: #ffc600;
-            background: black;
-            margin-right: 30px;
-        }
-        img{
-            margin: 50px 80px 50px;
-            height: auto;
-            width: 80%;
-            text-align: center;
-        }
-    }
-    div{
-        text-align: center;
-    } 
-    }
-   
-
-}
-}

@@ -1,3 +1,10 @@
+@import url(https://fonts.googleapis.com/css2?family=Unbounded:wght@500&display=swap);
+
+@import "utilities/variables";
+@import "utilities/mapas";
+@import "utilities/mixin";
+@import "utilities/extend";
+
 * {
     padding: 0;
     margin: 0;
@@ -9,11 +16,11 @@
 body{
     background-color: #51d1f6;
     font-size: 1rem;
-    font-family: 'Unbounded', cursive;
+    font-family: $tipo;
     header {
         nav{
             display: flex;
-            background: white;
+            background:$menu;
             height: 5rem;
             width: 100%;
             align-items: center;
@@ -25,7 +32,7 @@ body{
                    line-height: 5rem;
                    a{
                     color: black;
-                    font-size: 1.1rem;
+                    font-size: map-get($map: $textos, $key: p-compu);
                     padding: 0.8rem;
                     border-radius: 0.2rem;
                     text-transform: uppercase;
@@ -55,12 +62,9 @@ body{
         div{
             section{
                 h2{
-                    margin: 1.5rem;
-                    text-align: center;
-                    color: #ffc600;
-                    background: black;
+                    @extend %titulo;
                     font-size: 2rem;
-                    padding: 0.5rem;
+                   
                 }
                 article{
                     
@@ -109,12 +113,8 @@ body{
                 aside{
                     text-align: center;
                     p{
-                        margin: 1.5rem;
-                        text-align: center;
-                        color: #ffc600;
-                        background: black;
+                        @extend %titulo;
                         font-size: 1.5rem;
-                        padding: 0.5rem;
                     }
                     img{
                         width: 70%;
@@ -132,12 +132,8 @@ body{
         aside{
             section{
                 p{
-                    margin: 1.5rem;
-                    text-align: center;
-                    color: #ffc600;
-                    background: black;
+                    @extend %titulo;
                     font-size: 1.5rem;
-                    padding: 0.5rem;
                         
                 }
                 div{
@@ -149,13 +145,9 @@ body{
                    }
                 }
                 .pajarito{
-                    display: grid;
-                    grid-template-columns: auto;
-                    grid-template-rows: auto;
-                    grid-template-areas: "twitter1 twitter2 twitter3";
-                    justify-content: center;
-                    .twitter1,.twitter2,.twitter3{
-                    width: 35rem;
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
                     }
                 }
             }
@@ -164,18 +156,11 @@ body{
             
             section{
                 h2{
-                    margin: 1.5rem;
-                    text-align: center;
-                    color: #ffc600;
-                    background: black;
+                    @extend %titulo;
                     font-size: 1.5rem;
-                    padding: 0.5rem;
                 }
                 div{
-                    display: grid;
-                    grid-template-columns: auto;
-                    grid-template-rows: auto;
-                    justify-items: center;
+                    @include  grid;
                     grid-template-areas:"for1 res1" 
                                         "for2 res2" 
                                         "for3 res3" 
@@ -195,19 +180,12 @@ body{
         }
         figure{
             h1{
-                    margin: 1.5rem;
-                    text-align: center;
-                    color: #ffc600;
-                    background: black;
+                @extend %titulo;
                     font-size: 2rem;
-                    padding: 0.5rem;
                 
             }
             div{
-                display: grid;
-                grid-template-columns: auto;
-                grid-template-rows: auto;
-                justify-items: center;
+                @include  grid;
                 grid-template-areas:"rem1 rem2" 
                                     "rem3 rem4"
                                     "rem5 rem6"
@@ -262,5 +240,276 @@ body{
             }
         }
     }
+
+
+@media (max-width: 900px){
+    body{
+        header{
+            nav{
+                ul{
+                    li{
+                        a{
+                            font-size: map-get($map: $textos, $key: p-table);
+                        }
+                    }
+                }
+            }
+
+        }
+        main{
+            div{
+                section{
+                    text-align: center;
+                    h2{
+                        margin: 2rem;
+                        color: #ffc600;
+                        background: black;
+                        font-size: 1.5rem;
+                        padding: 0.5rem;
+                        display:inline-block;
+                    
+                        
+                    }
+                    article{
+                            margin: 1rem 0 2rem;
+                            .ima-equipo{
+                                height: auto;
+                                width: 85%;
+                            }
+                        
+                    }
+                    div{
+                        .titulo{
+                            color: white;
+                            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            margin-bottom: 20px;
+                            margin-top: 20px;
+                            text-align: center;
+
+                        }
+                        ul{
+                            li{
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+                section{
+                   
+                    div{
+                      
+                        
+                        div{
+                            display: flex;
+                            justify-content: center;
+                            margin: 16px 0 30px;
+                            img{
+                                width: 70%;
+                                margin-right: 50px;
+                            }
+                        }
+                    }
+                }
+                iframe{
+                    margin: 25px 30px;
+                }
+        
+    
+            }
+            blockquote{
+                section{
+                    aside{
+                        text-align: center;
+                        p{
+                            font-size: 1rem;
+                            display:inline-block;
+                        }
+                        img{
+                            width: 70%;
+                        }
+                    }
+                    article{
+                        
+                      margin: 2rem;
+                    
+                    }
+                    div{
+                        text-align: center;
+                    }
+                }
+             }
+             aside{
+                section{ 
+                    text-align: center;
+                    p{
+                        font-size: 1rem;
+                        display: inline-block; 
+                    }
+                }
+             }
+
+
+             article{
+            
+                section{
+                    text-align: center;
+                    h2{
+                        font-size: 1rem;
+                        display:inline-block;
+                    }
+                }
+        }
+        figure{
+            h1{
+                font-size: 1.5rem;
+                display:inline-block;
+            }
+
+            div{
+                .remeras{
+                    margin: 0.5rem;
+                }                    
+                img{
+                    width: 90%;
+                    height: auto;
+                }
+            }
+        }
+        
+    }
+
 }
+
+@media (max-width: 600px){
+    body{
+        header{
+            nav{
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: flex-start;
+                ul{
+                    display: flex;
+                    position: fixed;
+                    width: 100%;
+                    height: 100vh;
+                    background: #2c3e50;
+                    top: 5rem;
+                    left: -100%;
+                    text-align: center;
+                    transition: all .5s;
+                    flex-direction: column;
+                    li{
+                        a{
+                            font-size: map-get($map: $textos, $key: p-celu);
+                        }
+                        a:hover,a.active{
+                            background: none;
+                            color: white;
+                        }
+                    }
+                }
+                .checkbtn{
+                    display: flex;}
+                #check:checked ~ ul{
+                    left:0;
+                }
+            }
+        }
+        fieldset{
+            display: none;
+        }
+        main{
+             blockquote{
+                section{
+                    aside{
+                        text-align: center;
+                        p{
+                            font-size: 0.7rem;
+
+                        }
+                        }
+                        img{
+                            width: 70%;
+                        }
+                    }
+                    article{
+                      margin: 2rem;
+                    
+                    }
+                    div{
+                        
+                        text-align: center;
+                        iframe{
+                            width: 75%;
+                            
+                        } 
+                    }
+                }
+                aside{
+                    section{
+                        div{
+                            padding: 1rem;
+                        }
+                    }
+                }
+                article{
+            
+                    section{
+                      
+                        div{                            
+                            grid-template-areas:"for1"
+                                                "res1" 
+                                                "for2" 
+                                                "res2" 
+                                                "for3" 
+                                                "res3" 
+                                                "for4" 
+                                                "res4" 
+                                                "for5" 
+                                                "res5" 
+                                                "for6" 
+                                                "res6" 
+                                                "for7" 
+                                                "res7";
+                            
+                        }
+                    }
+                }
+                figure{
+                    div{
+                        grid-template-areas:"rem1" 
+                                            "rem2" 
+                                            "rem3" 
+                                            "rem4"
+                                            "rem5" 
+                                            "rem6"
+                                            "rem7" 
+                                            "rem8"
+                                            "rem9" 
+                                            "rem10"
+                                            "rem11" 
+                                            "rem12"
+                                            "rem13" 
+                                            "rem14"
+                                            "rem15" 
+                                            "rem16";
+                        .remeras{
+                            margin: 0.5rem;
+                        }                    
+                        img{
+                            width: 90%;
+                        }
+                    }
+        
+                }
+
+             }
+        }
+    }
+}
+
+
 

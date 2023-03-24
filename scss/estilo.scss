@@ -13,6 +13,7 @@
     box-sizing: border-box;
 }
 
+/* Nav o menu, y general*/
 body{
     background-color: #51d1f6;
     font-size: 1rem;
@@ -54,195 +55,255 @@ body{
             }
              
             }
+        }
+        div{
+            .arriba{
+                margin-left: 2rem;
+                text-decoration: none;
+                
+            }
+        }
+        footer{
+            margin: 2rem 0;
+            div{
+                display: flex;
+                justify-content: space-around;
+            }
+            a{
+                img{
+                    height: auto;
+                    width: 50px 
+                }
+            }
+        }
+     
 
 
     }
-    main{
+
+     /*Pagina Index*/
+    body{
+        main{
         
         div{
+            text-align: center;
             section{
                 h2{
                     @extend %titulo;
                     font-size: 2rem;
-                   
-                }
+                   }
                 article{
                     
-                        display: flex;
-                        justify-content: center;
-                        margin: 16px 0 30px;
-                    
-                }
-                div{
-                    p{
-                        margin-bottom: 20px;
-                        margin-top: 20px;
-                        text-align: center;
-                    }
-                    ul{
-                        li{
-                            text-align: center;
-                        }
-                    }
-                }
-            }
-            section{
-               
-                div{
-                  
-                    
-                    div{
                         display: flex;
                         justify-content: center;
                         margin: 16px 0 30px;
                         img{
-                            width: 70%;
-                            margin-right: 50px;
+                            width: 90%;
                         }
-                    }
-                }
-            }
-            iframe{
-                margin: 25px 30px;
-            }
-    
+                        }
+                div{
+      
+                            figure{
+                                display: flex;
+                                justify-content: space-evenly;
+                                align-items: center;
+                                margin: 6rem 0;
+                               
+                               
+                                div{
 
-        }
-        blockquote{
-            section{
-                aside{
-                    text-align: center;
-                    p{
-                        @extend %titulo;
-                        font-size: 1.5rem;
+                                    display: flex;
+                                    flex-direction: column;
+                                    align-items: flex-start;
+                                    
+                                    p{
+                                        margin-bottom: 20px;
+                                        margin-top: 20px;
+                                    }
+                                 
+                                    
+                                  
+                                }
+                                img{
+                                    width: 50%;
+                                    height: 50%;
+                                    border-radius: 60%;                            
+                                    
+                                }
+                            }
+                            div{
+                                display: flex;
+                                justify-content: center;
+                                margin: 16px 0 30px;
+                                img{
+                                    width: 70%;
+                                    margin-right: 50px;
+                                }
+                            }
+                        }
+                 
+               
                     }
-                    img{
+                    iframe{
                         width: 70%;
-                    }
-                }
-                article{
-                  margin: 2rem;
-                
-                }
-                div{
-                    text-align: center;
-                }
-            }
-         }
-        aside{
-            section{
-                p{
-                    @extend %titulo;
-                    font-size: 1.5rem;
                         
-                }
-                div{
-                text-align: center;
-                   img{
-                    width: 80%;
-                    margin: 1rem 0;
+                    }
 
-                   }
                 }
-                .pajarito{
-                    display: flex;
-                    align-items: center;
-                    flex-direction: column;
-                    }
-                }
-            }
+      
         }
-        article{
+
+        fieldset{
+            border: 5px solid black;
+            padding: 20px 0px 20px 10%;
+            margin: 2rem ;
+        }
+    
             
-            section{
-                h2{
-                    @extend %titulo;
-                    font-size: 1.5rem;
-                }
-                div{
-                    @include  grid;
-                    grid-template-areas:"for1 res1" 
-                                        "for2 res2" 
-                                        "for3 res3" 
-                                        "for4 res4" 
-                                        "for5 res5" 
-                                        "for6 res6" 
-                                        "for7 res7";
-                    .formaciones{
-                        margin: 2rem;
-                    }                    
-                    img{ 
-                        width: 75%;
-                        height: auto;                       
-                    }
-                }
-            }
-        }
-        figure{
-            h1{
-                @extend %titulo;
-                    font-size: 2rem;
-                
-            }
-            div{
-                @include  grid;
-                grid-template-areas:"rem1 rem2" 
-                                    "rem3 rem4"
-                                    "rem5 rem6"
-                                    "rem7 rem8"
-                                    "rem9 rem10"
-                                    "rem11 rem12"
-                                    "rem13 rem14"
-                                    "rem15 rem16";
-                .remeras{
-                    margin: 1rem;
-                }                    
-                img{
-                    width: 70%;
-                    height: auto;
-                }
-            }
+            
+           
+        
+      
+        
+      
+    
+            
 
         }
         
-       
-    }
-    figure{
-        text-align: center;
-        .fin2{
-        width: 50%;
-        height: auto;
-        }
-    }
-    div{
-        .arriba{
-            margin-left: 2rem;
-            text-decoration: none;
-            
-        }
-    }
-    fieldset{
-        border: 5px solid black;
-        padding: 20px 0px 20px 10%;
-        margin: 2rem ;
-    }
-
-    footer{
-        margin: 2rem 0;
-        div{
-            display: flex;
-            justify-content: space-around;
-        }
-        a{
-            img{
-                height: auto;
-                width: 50px 
+        /*Pagina Copa America*/
+        body{
+            main{
+                blockquote{
+                    section{
+                        aside{
+                            text-align: center;
+                            p{
+                                @extend %titulo;
+                                font-size: 1.5rem;
+                            }
+                            img{
+                                width: 70%;
+                            }
+                        }
+                        article{
+                          margin: 2rem;
+                        
+                        }
+                        div{
+                            text-align: center;
+                        }
+                    }
+                 }
             }
         }
-    }
+
+         /*Pagina de Finalisima*/
+         body{
+            main{
+                aside{
+                    section{
+                        p{
+                            @extend %titulo;
+                            font-size: 1.5rem;
+                                
+                        }
+                        div{
+                        text-align: center;
+                           img{
+                            width: 80%;
+                            margin: 1rem 0;
+        
+                           }
+                        }
+                        .pajarito{
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            }
+                        }
+                    }
+                
+            }
+            figure{
+                text-align: center;
+                .fin2{
+                width: 50%;
+                height: auto;
+                margin: 2rem;
+                }
+            }
+        }
+
+                 /*Pagina del Mundial*/
+                                 body{
+                                    main{
+                                        article{
+                
+                                            section{
+                                                h2{
+                                                    @extend %titulo;
+                                                    font-size: 1.5rem;
+                                                }
+                                                div{
+                                                    @include  grid;
+                                                    grid-template-areas:"for1 res1" 
+                                                                        "for2 res2" 
+                                                                        "for3 res3" 
+                                                                        "for4 res4" 
+                                                                        "for5 res5" 
+                                                                        "for6 res6" 
+                                                                        "for7 res7";
+                                                    .formaciones{
+                                                        margin: 2rem;
+                                                    }                    
+                                                    img{ 
+                                                        width: 75%;
+                                                        height: auto;                       
+                                                    }
+                                                }
+                                            }
+                                        }
+                                        
+                                    }
+                                }
+
+                                /*Pagina de Remeras*/
+                                body{
+                                    main{
+                                        figure{
+                                            h1{
+                                                @extend %titulo;
+                                                    font-size: 2rem;
+                                                
+                                            }
+                                            div{
+                                                @include  grid;
+                                                grid-template-areas:"rem1 rem2" 
+                                                                    "rem3 rem4"
+                                                                    "rem5 rem6"
+                                                                    "rem7 rem8"
+                                                                    "rem9 rem10"
+                                                                    "rem11 rem12"
+                                                                    "rem13 rem14"
+                                                                    "rem15 rem16";
+                                                .remeras{
+                                                    margin: 1rem;
+                                                }                    
+                                                img{
+                                                    width: 70%;
+                                                    height: auto;
+                                                }
+                                            }
+                                
+                                        }
+                                        
+                                    }
+                                }
 
 
 @media (max-width: 900px){
+    /* Nav o menu, y general*/
     body{
         header{
             nav{
@@ -256,6 +317,10 @@ body{
             }
 
         }
+    }
+
+    /* Pagina del Index*/
+    body{
         main{
             div{
                 section{
@@ -295,6 +360,17 @@ body{
                                 text-align: center;
                             }
                         }
+                        figure{
+                            img{
+                                width: 35%;
+                                height: 35%;
+                                border-radius: 60%;                            
+                                
+                            }
+
+                        }
+                        
+                        
                     }
                 }
                 section{
@@ -318,72 +394,96 @@ body{
                 }
         
     
+            }}}
+
+                /* Pagina de la copa america*/
+            body{
+                main{
+                    blockquote{
+                        section{
+                            aside{
+                                text-align: center;
+                                p{
+                                    font-size: 1rem;
+                                    display:inline-block;
+                                }
+                                img{
+                                    width: 70%;
+                                }
+                            }
+                            article{
+                                
+                              margin: 2rem;
+                            
+                            }
+                            div{
+                                text-align: center;
+                            }
+                        }
+                     }
+
+                }
             }
-            blockquote{
-                section{
+            
+                 /* Pagina de la finalisima*/
+            body{
+                main{
                     aside{
-                        text-align: center;
-                        p{
-                            font-size: 1rem;
+                        section{ 
+                            text-align: center;
+                            p{
+                                font-size: 1rem;
+                                display: inline-block; 
+                            }
+                        }
+                     }
+
+                }
+            }
+
+                /* Pagina del mundial*/
+            body{
+                main{
+                    article{
+            
+                        section{
+                            text-align: center;
+                            h2{
+                                font-size: 1rem;
+                                display:inline-block;
+                            }
+                        }
+                }
+                }
+            }
+             
+
+                            /* Pagina de remeras*/
+            body{
+                main{
+                    figure{
+                        h1{
+                            font-size: 1.5rem;
                             display:inline-block;
                         }
-                        img{
-                            width: 70%;
+            
+                        div{
+                            .remeras{
+                                margin: 0.5rem;
+                            }                    
+                            img{
+                                width: 90%;
+                                height: auto;
+                            }
                         }
                     }
-                    article{
-                        
-                      margin: 2rem;
                     
-                    }
-                    div{
-                        text-align: center;
-                    }
-                }
-             }
-             aside{
-                section{ 
-                    text-align: center;
-                    p{
-                        font-size: 1rem;
-                        display: inline-block; 
-                    }
-                }
-             }
-
-
-             article{
-            
-                section{
-                    text-align: center;
-                    h2{
-                        font-size: 1rem;
-                        display:inline-block;
-                    }
-                }
-        }
-        figure{
-            h1{
-                font-size: 1.5rem;
-                display:inline-block;
-            }
-
-            div{
-                .remeras{
-                    margin: 0.5rem;
-                }                    
-                img{
-                    width: 90%;
-                    height: auto;
                 }
             }
-        }
-        
-    }
-
 }
 
 @media (max-width: 600px){
+        /* Nav o menu, y general*/
     body{
         header{
             nav{
@@ -396,7 +496,7 @@ body{
                     width: 100%;
                     height: 100vh;
                     background: #2c3e50;
-                    top: 5rem;
+                    top: 4rem;
                     left: -100%;
                     text-align: center;
                     transition: all .5s;
@@ -418,9 +518,29 @@ body{
                 }
             }
         }
+    }
+
+                    /* Pagina del index*/
+    body{
+        main{
+            div{
+                section{
+                    div{
+                        figure{
+                            flex-direction: column;
+                        }
+                    }
+                }
+
+            }
+        }
         fieldset{
             display: none;
         }
+    }
+
+                        /* Pagina de la copa america*/
+    body{
         main{
              blockquote{
                 section{
@@ -448,6 +568,12 @@ body{
                         } 
                     }
                 }
+            }
+        }
+
+                         /* Pagina de la finalisima*/
+        body{
+            main{
                 aside{
                     section{
                         div{
@@ -455,6 +581,13 @@ body{
                         }
                     }
                 }
+            }
+        }
+
+        /* Pagina del mundial*/
+        body{
+            main{
+        
                 article{
             
                     section{
@@ -478,6 +611,12 @@ body{
                         }
                     }
                 }
+            }
+        }
+
+        /* Pagina de remeras*/
+        body{
+            main{
                 figure{
                     div{
                         grid-template-areas:"rem1" 
@@ -509,7 +648,7 @@ body{
              }
         }
     }
-}
+
 
 
 
